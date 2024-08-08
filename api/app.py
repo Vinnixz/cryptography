@@ -2,7 +2,7 @@ from flask import Flask, request
 from controller.user import UserController
 from database.user import UserDB
 
-dao = UserDB
+dao = UserDB()
 app = Flask(__name__)
 user_controller = UserController(dao)
 
